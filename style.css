@@ -1,0 +1,15 @@
+h4 {
+	text-transform: capitalize;
+	font-style: italic;
+	text-align: center;
+}
+
+div {
+	color: red;
+	align-content: center;
+}
+
+p {
+	text-align: center;
+	color: red;
+}

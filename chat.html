@@ -42,6 +42,8 @@
         firebase.initializeApp(config);
         </script>
         <script type="text/javascript">
+
+		
             var database = firebase.database();
             
             function send(){
@@ -78,7 +80,7 @@
                         var div = document.createElement('div');
                         div.style.opacity="0";
                         var name = data.val().name;
-                        var msg = data.val().msg;
+                        var msg = data.val().msg
                         div.innerHTML="<hr>@"+name+"&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;"+msg+"";
                         //document.getElementById("chat_shower").appendChild(div);
                         document.getElementById("chat_shower").append(div);
@@ -87,7 +89,9 @@
 
             }
             load_msg();
+
         </script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
     <body style="background:#646D67;">
@@ -96,7 +100,7 @@
             <div class="col-md-4">
         <br>          
         <h4>Secure Live Chat</h4>
-        
+
         <div id="chat_shower" onload="load_msg();" class="alert alert-primary" role="alert" style="max-height:500px;overflow-y:auto;px-0">
 
         </div>
@@ -106,6 +110,9 @@
             </div>
             <div class="col-md-4"></div>
         </div>  
-<p>Refresh page to refresh messages</p>
+<a href="announcements.html">Visit the announcements page to see whats new</a>
+<p>if messages dont refresh automatically refresh page</p>
+<a href="Games.html">Games Menu</a>
+
     </body>
 </html>
